@@ -26,12 +26,11 @@ if (inputName == nameENG || inputName == nameTH) {
 
 
 // LAB-4
-/*
-let inputNumber = prompt("Please enter the number :");
+/*let inputNumber = +prompt("Please enter the number :");
 
 if (inputNumber > 0) {
     alert("Positive number");
-} else if (inputNumber == 0) {
+} else if (inputNumber === 0) {
     alert("Zero");
 } else if (inputNumber < 0) {
     alert("Negative number");
@@ -41,8 +40,7 @@ if (inputNumber > 0) {
 
 
 // LAB-5
-/*
-let inputNumber = prompt("Please enter the number :");
+/*let inputNumber = +prompt("Please enter the number :");
 
 if (inputNumber%2 === 0) {
     alert("Even number");
@@ -53,11 +51,11 @@ if (inputNumber%2 === 0) {
 
 // LAB-6
 /*function addNumbers() {
-    let num1 = prompt("Enter the first number :");
-    let num2 = prompt("Enter the second number :");
+    let num1 = +prompt("Enter the first number :");
+    let num2 = +prompt("Enter the second number :");
 
-    if (parseFloat(num1) && parseFloat(num2)) {
-        let sum = parseFloat(num1) + parseFloat(num2);
+    if (num1 && num2) {
+        let sum = num1 + num2;
         alert("The sum is: " + sum);
     } else {
         alert("Invalid number");
@@ -95,11 +93,11 @@ calculateGrade();*/
 
 // LAB-8
 /*function sortNumbersDescending() {
-    let num1 = prompt("Enter the first number:");
-    let num2 = prompt("Enter the second number :");
-    let num3 = prompt("Enter the third number :");
+    let num1 = +prompt("Enter the first number:");
+    let num2 = +prompt("Enter the second number :");
+    let num3 = +prompt("Enter the third number :");
 
-    if (parseFloat(num1) && parseFloat(num2) && parseFloat(num3)) {
+    if (num1 && num2 && num3) {
 
         let numbers = [num1, num2, num3];
         numbers.sort((a, b) => b - a);
@@ -136,3 +134,22 @@ login();*/
 
 
 // LAB-10
+/*
+let user = prompt("Enter your name:");
+
+if (user === "" || user === null) {
+    user = "guest";
+    alert("Welcome, " + user);
+} else if (user === "codecamp") {
+    let password = prompt("Enter your password:");
+
+    if (password === "123456") {
+        user = "codecamp";
+        alert("Welcome, " + user);
+    } else {
+        alert("Wrong password");
+    }
+} else {
+    user = "guest";
+    alert("Welcome, " + user);
+}*/
