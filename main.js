@@ -35,7 +35,7 @@ if (inputNumber > 0) {
 } else if (inputNumber < 0) {
     alert("Negative number");
 } else {
-    alert("Invalid number");
+    alert("Invalid input, please enter only numbers.");
 }*/
 
 
@@ -135,13 +135,13 @@ login();*/
 
 // LAB-10
 /*
-let user = prompt("Enter your name:");
+let user = prompt("Enter your name :");
 
 if (user === "" || user === null) {
     user = "guest";
     alert("Welcome, " + user);
 } else if (user === "codecamp") {
-    let password = prompt("Enter your password:");
+    let password = prompt("Enter your password :");
 
     if (password === "123456") {
         user = "codecamp";
@@ -153,3 +153,6 @@ if (user === "" || user === null) {
     user = "guest";
     alert("Welcome, " + user);
 }*/
+
+
+// LAB-11
